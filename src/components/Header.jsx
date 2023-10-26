@@ -17,7 +17,7 @@ function Header() {
           <Link to={"/"}><img src="/images/dark-logo.png" alt="logo"/></Link>
         </div>
         <ul className='link-bar'>
-          <Link to={"#"}><li>Book Now</li></Link>
+          <Link to="BookPage"><li>Book Now</li></Link>
         </ul>
           <button className='bar-icon'> <FaBars onClick={togleAsite} /> </button>
       </nav>

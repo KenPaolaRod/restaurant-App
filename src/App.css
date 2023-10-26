@@ -167,6 +167,31 @@ h1, p {
   padding: 1rem;
 }
 
+footer {
+  background-color: var(--bg-dark);
+  display: grid;
+  row-gap: 1rem;
+}
+
+.footer-links {
+  display: grid;
+  color: var(--color-light);
+  text-align: center;
+  row-gap: .5rem;
+}
+
+footer img {
+  width: 200px;
+}
+
+.footer-logo {
+  justify-self: center;
+}
+
+form {
+  padding-top: 10rem;
+}
+
 
 @media screen and (min-width: 765px) {
   
@@ -295,6 +320,24 @@ h1, p {
     color: var(--color-light);
     padding: 3rem 1rem;
     font-size: 2rem;
+  }
+
+  footer {
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-links {
+    grid-template-columns: repeat(3, 1fr);
+    align-items: end;
+    justify-items: end;
+    padding-right: 1rem;
+  }
+
+  .footer-logo {
+    justify-self: start;
+    padding-left: 1rem;
   }
 
 
