@@ -1,6 +1,7 @@
 
 import { FaBars } from 'react-icons/fa';
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
   const [asideVisible, setasideVisible] = useState(false);
@@ -13,18 +14,17 @@ function Header() {
     <header>
       <nav>
         <div className='header-logo'>
-          <a href="/"> <img src="/images/dark-logo.png" alt="logo"/></a>
+          <Link to={"/"}><img src="/images/dark-logo.png" alt="logo"/></Link>
         </div>
         <ul className='link-bar'>
-          <li><a href="#">Book Now</a></li>
+          <Link to={"#"}><li>Book Now</li></Link>
         </ul>
           <button className='bar-icon'> <FaBars onClick={togleAsite} /> </button>
       </nav>
-
       {asideVisible && (
         <aside className='aside'>
           <ul className='clicked'>
-            <li><a href="#">Book Now</a></li>
+            <Link to="#"><li>Book Now</li></Link>
           </ul>
         </aside>
       )}

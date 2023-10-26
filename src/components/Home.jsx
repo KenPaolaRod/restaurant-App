@@ -1,5 +1,7 @@
 import Header from "./Header"
 import HeroSection from "./HeroSection"
+import HomeSectionTwo from "./HomeSectionTwo"
+import HomeSectionTree from "./HomeSectionTree"
 
 
 function Home() {
@@ -7,6 +9,8 @@ function Home() {
     <>
       <Header />
       <HeroSection />
+      <HomeSectionTwo />
+      <HomeSectionTree />
 
     </>
   )

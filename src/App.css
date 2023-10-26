@@ -12,9 +12,16 @@
   box-sizing: border-box;
 }
 
+header {
+  position: relative;
+}
+
 nav {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  position: fixed;
+  background-color: var(--bg-light);
+  width: 100%;
 }
 
 header img {
@@ -28,6 +35,9 @@ header ul {
 aside ul.clicked {
   display: block;
   background-color: var(--bg-dark);
+  position: absolute;
+  width: 100%;
+  margin-top: 6rem;
 }
 
 aside a {
@@ -53,6 +63,111 @@ aside li {
   margin-top: .3rem;
 }
 
+.hero-section {
+  display: grid;
+  padding-top: 6rem;
+}
+
+.hero-section article {
+  display: grid;
+}
+
+.hero-section img, .section-two img {
+  width: 260px;
+  padding: 1rem;
+  margin: 0 auto;
+}
+
+.small-text {
+  margin-top: 1rem;
+}
+
+.hero-section h1, .section-two h2 {
+  font-size: 1.9rem;
+  padding: 0.5rem;
+  width: 18rem;
+  color: var(--color-dark);
+  justify-self: center;
+  text-align: center;
+}
+
+h1, p {
+  color: var(--color-dark);
+  text-align: center;
+  justify-self: center;
+}
+
+.hero-pargh, .section-two p {
+  text-align: center;
+  font-size: 1rem;
+  padding: 1rem;
+  width: 18rem;
+  margin: 0 auto;
+  letter-spacing: 1px;
+}
+
+.section-two {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+
+.section-two img {
+  grid-row: 1 / 2;
+}
+
+.section-two article {
+  display: grid;
+}
+
+.btn {
+  padding: .6rem;
+  border: none;
+  background-color: var(--bg-dark);
+  color: var(--color-light);
+  cursor: pointer;
+}
+
+.btn-book {
+  width: 100px;
+  margin-left: 1rem;
+  align-self: center;
+  margin: 0 auto;
+}
+
+.section-tree {
+  display: grid;
+  row-gap: 2rem;
+  align-items: center;
+  justify-items: center;
+  margin-top: 3rem;
+}
+
+.section-tree img {
+  width: 230px;
+}
+
+.fish-img-box {
+  grid-row: 1 / 2;
+}
+
+.section-tree h2 {
+  width: 17rem;
+  text-align: center;
+  color: var(--color-dark);
+}
+
+.tamal-box, .fish-img-box {
+  display: grid;
+  justify-items: center;
+  row-gap: 1rem;
+}
+
+.tamal-box p {
+  padding: 1rem;
+}
+
+
 @media screen and (min-width: 765px) {
   
   header ul {
@@ -72,6 +187,140 @@ aside li {
   .bar-icon {
     display: none;
   }
+
+  .header-logo {
+    margin-left: 2rem;
+  }
+
+  .hero-section {
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+  }
+
+  .hero-section img, .section-two img {
+    width: 320px;
+  }
+
+  .hero-section h1 {
+    text-align: start;
+    width: 25rem;
+  }
+
+  .hero-section article  {
+    justify-content: start;
+  }
+
+  .hero-pargh {
+    width: 26rem;
+    text-align: start;
+  }
+
+  h1, p {
+    text-align: start;
+    margin: none;
+    width: 17rem;
+  }
+
+  .small-text {
+    width: 24rem;
+  }
+
+  .section-two {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column: 1fr 1fr min-content;
+    margin-top: 6rem;
+  }
+
+  .section-two article {
+    align-items: center;
+  }
+  
+  .section-two img {
+    grid-column: 2 / 3;
+  }
+
+  .section-two h2 {
+    text-align: start;
+    align-self: end;
+  }
+
+  .section-two p {
+    align-self: start;
+    text-align: start;
+  }
+
+  .btn-book {
+    justify-self: start;
+    margin: 0 1rem;
+  }
+
+  .section-tree {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .section-tree img {
+    width: 200px;
+    align-items: center;
+  }
+
+  .tamal-box {
+    grid-row: 1 / 2;
+    row-gap: 0;
+  }
+
+  .tamal-box img {
+    padding-top: 1rem;
+    justify-self: start;
+    margin-left: 1rem;
+  }
+
+  .fish-img-box {
+    grid-column: 3 / 4;
+  }
+
+  .bandeja-paisa-dish {
+    padding-top: 15rem;
+  }
+
+  .fish-img-box img {
+    padding-top: 7rem;
+  }
+
+  .fish-img-box {
+    background-color: var(--bg-dark);
+    color: var(--color-light);
+  }
+
+  .fish-img-box h2 {
+    color: var(--color-light);
+    padding: 3rem 1rem;
+    font-size: 2rem;
+  }
+
+
+}
+
+@media screen and (min-width: 1280px) {
+  .hero-section h1, .section-two h2 {
+    font-size: 3rem;
+  }
+
+  .hero-section img, .section-two img {
+    width: 400px;
+  }
+
+  .section-tree img {
+    width: 350px;
+    align-items: center;
+  }
+
+  .tamal-box p {
+    width: 25rem;
+    }
+
+    .fish-img-box {
+      padding: 0 2rem;
+    }
 }
 
 
