@@ -8,7 +8,16 @@ function Form() {
   const [FullName, setFullName] = useState("");
   const [numberOfPeople, setnumberOfPeople] = useState("");
   const [time, setTime] = useState("");
+  const [date, setDate] = useState("")
   const [message, setMessage] = useState("");
+
+  const clearInputs = () => {
+    setFullName("");
+    setnumberOfPeople("");
+    setTime("");
+    setMessage("")
+    setDate("")
+  }
 
 
   const handleSubmit = (e) => {
@@ -16,9 +25,9 @@ function Form() {
   }
 
   const addBookings = async (bookings) => {
-     await addDoc(collection(db, "Bookings"), bookings ) ;
+     await addDoc(collection(db, "Bookings"), bookings );
+     clearInputs()
   }
-
 
   return (
     <>
@@ -26,8 +35,9 @@ function Form() {
       <input type="text" name="name" required value={FullName} onChange={(e) => setFullName(e.target.value)}/>
       <input type="Number" name="number" required value={numberOfPeople} onChange={(e) => setnumberOfPeople(e.target.value)}/>
       <input type="time" name="time" required value={time} onChange={(e) => setTime(e.target.value)} />
+      <input type="date" name="date" id="date" required value={date} onChange={(e) => setDate(e.target.value)} />
       <textarea name="message"  cols="30" rows="10" required value={message} onChange={(e) => setMessage(e.target.value)}></textarea>
-      <button type="submit" onClick={() => addBookings({FullName, numberOfPeople, time, message})}>Submit</button>
+      <button type="submit" onClick={() => addBookings({FullName, numberOfPeople, time, date, message})}>Submit</button>
     </form>
 
     <Booking />

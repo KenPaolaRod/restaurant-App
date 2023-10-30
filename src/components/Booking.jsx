@@ -5,11 +5,12 @@ import { collection, getDoc, getDocs, onSnapshot } from "firebase/firestore";
 function Booking() {
 
   const [bookings, setBookings] = useState([]);
-  
-  const getData = async () => {
-    const data = await getDocs(collection(db, "Bookings"));
-    setBookings( data.docs.map(docs => docs.data())
-    );
+
+
+  const getData = () => {
+    onSnapshot(collection(db, "Bookings"), (booking) => {
+      setBookings(booking.docs.map(docs => docs.data()));
+    })
   }
 
   useEffect(() => {
@@ -26,9 +27,11 @@ function Booking() {
           
           <div className='booking-box' key={id}>
             <p>Name: {e.FullName}</p>
-            <p>Message: {e.message}</p>
             <p>Number Of People: {e.numberOfPeople}</p>
             <p>Time:{e.time}</p>
+            <p>Date: {e.date}</p>
+            <p>Message: {e.message}</p>
+            <button>Delete</button>
           </div>
           
         )
