@@ -192,6 +192,10 @@ form {
   padding-top: 10rem;
 }
 
+.booking-box {
+  padding: 1rem;
+}
+
 
 @media screen and (min-width: 765px) {
   
