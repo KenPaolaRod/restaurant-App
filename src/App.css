@@ -190,6 +190,7 @@ footer img {
 
 form {
   padding-top: 10rem;
+  display: grid;
 }
 
 .booking-box {
