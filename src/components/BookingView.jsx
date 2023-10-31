@@ -1,8 +1,8 @@
 import { useState, useEffect } from 'react'
-import {db} from "../components/firebase"
+import {db} from "./firebase"
 import { collection, onSnapshot, deleteDoc, doc } from "firebase/firestore";
 
-function Booking() {
+function BookingView() {
 
   const [bookings, setBookings] = useState([]);
 
@@ -31,7 +31,7 @@ function Booking() {
             <p>Time:{e.data().time}</p>
             <p>Date: {e.data().date}</p>
             <p>Message: {e.data().message}</p>
-            <button onClick={() => cancelBooking(e.id)}>Delete</button>
+            <button onClick={() => cancelBooking(e.id)}>Cancel</button>
           </div>
         )
       })}
@@ -39,4 +39,4 @@ function Booking() {
   )
 }
 
-export default Booking
+export default BookingView

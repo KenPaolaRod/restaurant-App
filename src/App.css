@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -188,17 +189,130 @@ footer img {
   justify-self: center;
 }
 
-form {
-  padding-top: 10rem;
+.form-box {
+  padding-top: 8rem;
+  background-color: var(--bg-dark);
+}
+
+.form-box p {
+  padding: .7rem 1.5rem;
+}
+
+.form-box h1, .form-box h2, .form-box p, .form-box a {
+  color: var(--bg-light);
+  text-decoration: none;
+}
+
+.contact-us, .book-now {
   display: grid;
+  justify-items: center;
+  row-gap: .4rem;
+}
+
+.book-now {
+  padding-top: 1.7rem;
+}
+
+form {
+  padding: .7rem 2rem;
+  display: grid;
+  row-gap: .5rem;
+}
+
+/* INPUT PLACEHOLDER */
+
+input::-webkit-input-placeholder {
+  color:  #e9e7e7; 
+}
+
+input::-moz-placeholder {
+  color:  #e9e7e7; 
+}
+
+input:-ms-input-placeholder {
+  color:  #e9e7e7; 
+}
+
+input::-ms-input-placeholder {
+  color: #e9e7e7; 
+}
+
+input::placeholder {
+  color: #e9e7e7; 
+}
+
+input {
+  background-color: var(--bg-dark);
+  border: none;
+  border-bottom: 1px solid var(--color-light);
+  padding: 0.2rem;
+  color: #ffffff;
+}
+
+textarea {
+  background-color: var(--bg-dark);
+  padding: .8rem .5rem;
+  color: var(--color-light);
+  border: none;
+  border-bottom: 1px solid var(--color-light);
+}
+
+textarea::-webkit-input-placeholder {
+  padding-top: 7.7rem;
+  color: #e9e7e7;
+}
+
+textarea::-moz-placeholder {
+  margin-top: 7rem;
+}
+
+textarea:-ms-input-placeholder {
+  margin-top: 7rem;
+}
+
+textarea::-ms-input-placeholder {
+  margin-top: 7rem;
+}
+
+textarea::placeholder {
+  margin-top: 7rem;
+}
+
+textarea:focus, input:focus {
+  outline: none;
+}
+
+input[type="time"], input[type="date"] {
+  color:  #e9e7e7;
+}
+
+/* - Cambiando el icono desplegable de los inputs DATE y Time
+   - Changing the drop-down icon for the DATE and Time Inputs
+*/
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1);
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  -webkit-filter: invert(1);
+          filter: invert(1); 
 }
 
 .booking-box {
   padding: 1rem;
 }
 
+.btn-light {
+  background-color: var(--bg-light);
+  color: var(--color-dark);
+  width: 4.5rem;
+  justify-self: center;
+}
 
-@media screen and (min-width: 765px) {
+
+@media screen and (min-width: 768px) {
   
   header ul {
     display: block;
@@ -345,6 +459,35 @@ form {
     padding-left: 1rem;
   }
 
+  .form-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10rem 3rem 1rem;
+    justify-items: center;
+  }
+
+  .contact-us {
+    height: 12rem;
+    justify-items: start;
+    padding-top: 1.8rem;
+  }
+
+  .contact-us p {
+    width: auto;
+    padding: 0.7rem 1rem ;
+  }
+
+  .contact-us a {
+    margin-left: 1rem ;
+  }
+  .contact-us h1 {
+    padding-left: 1rem;
+  }
+
+  .contact-us p, .contact-us h1 {
+    justify-self: start;
+  }
+
 
 }
 
@@ -368,6 +511,10 @@ form {
 
     .fish-img-box {
       padding: 0 2rem;
+    }
+
+    .form-box {
+      padding: 10rem 8rem 1rem;
     }
 }
 
