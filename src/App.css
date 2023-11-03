@@ -198,6 +198,10 @@ footer img {
   padding: .7rem 1.5rem;
 }
 
+.form-box h1 {
+  font-size: 3rem;
+}
+
 .form-box h1, .form-box h2, .form-box p, .form-box a {
   color: var(--bg-light);
   text-decoration: none;
@@ -211,6 +215,10 @@ footer img {
 
 .book-now {
   padding-top: 1.7rem;
+}
+
+.book-now h2 {
+  font-size: 2rem;
 }
 
 form {
@@ -459,12 +467,22 @@ p span {
   }
 
   .section-tree {
-    grid-template-columns: repeat(3, 1fr);
+    width: 75vw;
+    grid-template-columns: 1fr 1fr 3fr;
+    padding-bottom: 5rem;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 6rem;
   }
 
   .section-tree img {
-    width: 200px;
+    width: 180px;
     align-items: center;
+  }
+
+  .section-tree h2 {
+    width: auto;
+    text-align: start;
   }
 
   .tamal-box {
@@ -480,14 +498,19 @@ p span {
 
   .fish-img-box {
     grid-column: 3 / 4;
+    width: 100%;
+    padding-bottom: 3rem;
   }
 
   .bandeja-paisa-dish {
-    padding-top: 15rem;
+    padding-top: 10rem;
+    position: absolute;
   }
 
   .fish-img-box img {
     padding-top: 7rem;
+    justify-self: end;
+
   }
 
   .fish-img-box {
@@ -539,6 +562,7 @@ p span {
 
   .contact-us h1 {
     padding-left: 1rem;
+    font-size: 3rem;
   }
 
   .contact-us p, .contact-us h1 {
@@ -568,7 +592,7 @@ p span {
   }
 
   .section-tree img {
-    width: 350px;
+    width: 300px;
     align-items: center;
   }
 
@@ -577,7 +601,7 @@ p span {
     }
 
     .fish-img-box {
-      padding: 0 2rem;
+      padding: 0 2rem 3rem;
     }
 
     .form-box {

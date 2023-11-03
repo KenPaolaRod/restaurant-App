@@ -24,7 +24,7 @@ function Header() {
       {asideVisible && (
         <aside className='aside'>
           <ul className='clicked'>
-            <Link to="#"><li>Book Now</li></Link>
+            <Link to="Bookpage"><li>Book Now</li></Link>
           </ul>
         </aside>
       )}

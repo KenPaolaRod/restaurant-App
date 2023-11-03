@@ -23,11 +23,12 @@ function BookingView() {
       await deleteDoc(doc(db, 'Bookings', id))
     }
   }
+
   
   return (
     <div className='booking-view'>
-      <h3>Bookings</h3>
-    
+      {bookings.length > 0 && <h3>Bookings</h3>}
+
       { bookings && bookings.map((e, index) => {
         return (
           <article className='booking-box' key={index}>
