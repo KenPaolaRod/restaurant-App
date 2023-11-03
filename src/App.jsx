@@ -9,8 +9,6 @@ import BookPage from './components/BookPage'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
     <Routes>

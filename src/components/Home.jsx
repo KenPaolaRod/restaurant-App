@@ -13,7 +13,6 @@ function Home() {
       <HomeSectionTwo />
       <HomeSectionTree />
       <Footer />
-
     </>
   )
 }

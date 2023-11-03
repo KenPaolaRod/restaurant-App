@@ -258,25 +258,26 @@ textarea {
 }
 
 textarea::-webkit-input-placeholder {
-  padding-top: 7.7rem;
   color: #e9e7e7;
 }
 
 textarea::-moz-placeholder {
-  margin-top: 7rem;
+  color: #e9e7e7;
 }
 
 textarea:-ms-input-placeholder {
-  margin-top: 7rem;
+  color: #e9e7e7;
 }
 
 textarea::-ms-input-placeholder {
-  margin-top: 7rem;
+  color: #e9e7e7;
 }
 
 textarea::placeholder {
-  margin-top: 7rem;
+  color: #e9e7e7;
 }
+
+
 
 textarea:focus, input:focus {
   outline: none;
@@ -310,6 +311,65 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   width: 4.5rem;
   justify-self: center;
 }
+
+.booking-view {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  row-gap: 1rem;
+}
+
+.booking-view h3 {
+  font-size: 2rem;
+  color: var(--color-dark);
+  margin-top: 1rem;
+}
+
+.booking-box {
+  border: 1px dashed var(--color-dark);
+  margin: 1rem 1rem;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 1fr 30px;
+  
+}
+
+.booking-view p {
+  color: #000;
+  text-align: start;
+  padding: .2rem 0;
+}
+
+p span {
+  color: var(--color-dark);
+  font-weight: bold;
+}
+
+.booking-box button {
+  height: 30px;
+  text-align: center;
+  border-radius: 50%;
+  border: none;
+  background-color: transparent;
+  color: var(--color-dark);
+  cursor: pointer;
+}
+
+.envelope {
+  font-size: 1.2rem;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
+  margin-left: 1rem;
+  align-items: center;
+  -moz-column-gap: .5rem;
+       column-gap: .5rem;
+  color: #e9e7e7;
+}
+
 
 
 @media screen and (min-width: 768px) {
@@ -477,9 +537,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding: 0.7rem 1rem ;
   }
 
-  .contact-us a {
-    margin-left: 1rem ;
-  }
   .contact-us h1 {
     padding-left: 1rem;
   }
@@ -487,6 +544,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .contact-us p, .contact-us h1 {
     justify-self: start;
   }
+
+  .booking-view {
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0 10rem;
+  }
+
+  .booking-view h3 {
+    grid-column: 1 / -1;
+  }
+  
 
 
 }
@@ -515,6 +582,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
     .form-box {
       padding: 10rem 8rem 1rem;
+    }
+
+    .booking-view {
+      grid-template-columns: repeat(3, 1fr);
+      margin: 0 10rem;
     }
 }
 
