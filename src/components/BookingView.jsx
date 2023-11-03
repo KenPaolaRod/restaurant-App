@@ -19,7 +19,9 @@ function BookingView() {
   },[]);
 
   const cancelBooking = async (id) => {
-    await deleteDoc(doc(db, 'Bookings', id))
+    if (confirm("Are you sure you want to cancel this reservation?")) {
+      await deleteDoc(doc(db, 'Bookings', id))
+    }
   }
   
   return (
