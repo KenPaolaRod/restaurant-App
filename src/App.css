@@ -436,6 +436,9 @@ p span {
   color: #e9e7e7;
 }
 
+.btn-link {
+  justify-self: center;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -525,6 +528,11 @@ p span {
   .btn-book {
     justify-self: start;
     margin: 0 1rem;
+  }
+
+  .btn-link {
+    justify-self: start;
+    cursor: pointer;
   }
 
   .section-tree {

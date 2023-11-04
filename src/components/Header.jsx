@@ -17,15 +17,16 @@ function Header() {
           <Link to={"/"}><img src="/images/dark-logo.png" alt="logo"/></Link>
         </div>
         <ul  className='link-bar'>
-          <Link to="Menupage"> <li>Menu</li> </Link>
-          <Link to="BookPage"><li>Book Now</li></Link>
+          <Link to="/MenuPage"> <li>Menu</li> </Link>
+          <Link to="/BookPage"><li>Book Now</li></Link>
         </ul>
         <button className='bar-icon'> <FaBars onClick={togleAsite} /> </button>
       </nav>
       {asideVisible && (
         <aside className='aside'>
           <ul className='clicked'>
-            <Link to="Bookpage"><li>Book Now</li></Link>
+            <Link to="/MenuPage"> <li>Menu</li> </Link>
+            <Link to="/Bookpage"><li>Book Now</li></Link>
           </ul>
         </aside>
       )}
