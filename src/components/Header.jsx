@@ -16,10 +16,11 @@ function Header() {
         <div className='header-logo'>
           <Link to={"/"}><img src="/images/dark-logo.png" alt="logo"/></Link>
         </div>
-        <ul className='link-bar'>
+        <ul  className='link-bar'>
+          <Link to="Menupage"> <li>Menu</li> </Link>
           <Link to="BookPage"><li>Book Now</li></Link>
         </ul>
-          <button className='bar-icon'> <FaBars onClick={togleAsite} /> </button>
+        <button className='bar-icon'> <FaBars onClick={togleAsite} /> </button>
       </nav>
       {asideVisible && (
         <aside className='aside'>
