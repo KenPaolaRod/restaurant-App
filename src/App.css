@@ -24,6 +24,7 @@ nav {
   position: fixed;
   background-color: var(--bg-light);
   width: 100%;
+  z-index: 1;
 }
 
 header img {
@@ -262,9 +263,13 @@ footer img {
   font-size: 3rem;
 }
 
-.form-box h1, .form-box h2, .form-box p, .form-box a {
+.form-box p, .form-box a {
   color: var(--bg-light);
   text-decoration: none;
+}
+
+.form-box h1 {
+  color: var(--color-medium);
 }
 
 .contact-us, .book-now {
@@ -279,6 +284,8 @@ footer img {
 
 .book-now h2 {
   font-size: 2rem;
+  color: var(--color-medium);
+
 }
 
 form {
