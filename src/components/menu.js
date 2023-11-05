@@ -1,6 +1,6 @@
 export const menu = [
   {
-    image: "/images/menu/bandeja-paisa.png",
+    image: "./images/menu/bandeja-paisa.png",
     dishTitle: "Bandeja paisa",
     dishDescription: "Experience the Authentic Delight of Bandeja Paisa - A Burst of Flavors in One Plate. Come and Savor!",
     price: "$15",
@@ -9,7 +9,7 @@ export const menu = [
   },
 
   {
-    image: "/images/menu/arepa-e'-queso.png",
+    image: "./images/menu/arepa-e'-queso.png",
     dishTitle: "Arepa e' queso",
     dishDescription: "Arepas with Cheese - Traditional Corn Cakes Filled with Melted Cheese, a Perfect Blend of Flavor and Comfort!",
     price: "$5",
@@ -18,7 +18,7 @@ export const menu = [
   },
 
   {
-    image: "/images/menu/buñuelos.png",
+    image: "./images/menu/buñuelos.png",
     dishTitle: "Buñuelos",
     dishDescription: "Buñuelos - Golden Fried Dough Balls, a Crispy Delight with a Soft Center!",
     price: "$4",
@@ -27,7 +27,7 @@ export const menu = [
   },
 
   {
-    image: "/images/menu/empanadas.png",
+    image: "./images/menu/empanadas.png",
     dishTitle: "Empanadas",
     dishDescription: "Colombian Empanadas - Savory, Flavorful Pastries with a Delicious Mix of Fillings!",
     price: "$6",
@@ -36,7 +36,7 @@ export const menu = [
   },
 
   {
-    image: "/images/menu/mojarra-frita.png",
+    image: "./images/menu/mojarra-frita.png",
     dishTitle: "Mojarra Frita",
     dishDescription: "Deep-Fried Mojarra - A coastal delight: Crispy and tender fish served with fresh sides, a journey for your taste buds.",
     price: "$23",
@@ -45,7 +45,7 @@ export const menu = [
   },
 
   {
-    image: "/images/menu/picada-antioqueña.png",
+    image: "./images/menu/picada-antioqueña.png",
     dishTitle: "Picada Antioqueña",
     dishDescription: "Antioqueña Platter - A delightful Colombian selection featuring sausages, pork belly, plantains, and more. A true taste of Colombia",
     price: "$30",
@@ -54,7 +54,7 @@ export const menu = [
   },
 
   {
-    image: "/images/menu/salchipapas.png",
+    image: "./images/menu/salchipapas.png",
     dishTitle: "Salchipapas",
     dishDescription: "A delightful fusion of crispy fries and savory sausages, offering a satisfying and flavorful treat that will leave you craving for more",
     price: "$12",
@@ -63,7 +63,7 @@ export const menu = [
   },
 
   {
-    image: "/images/menu/Sanchocho.png",
+    image: "./images/menu/Sanchocho.png",
     dishTitle: "Sanchocho",
     dishDescription: "Sanchocho - A hearty Colombian soup, brimming with flavors, featuring meat, potatoes, plantains, and corn. A taste of Colombian comfort.",
     price: "$17",
@@ -72,7 +72,7 @@ export const menu = [
   },
 
   {
-    image: "/images/menu/tamal-antioqueño.png",
+    image: "./images/menu/tamal-antioqueño.png",
     dishTitle: "Tamal Antioqueño",
     dishDescription: "Tamal Antioqueño - A traditional Antioquian tamale, a delicious blend of corn masa and seasoned pork, wrapped in a banana leaf.",
     price: "$8",
