@@ -14,7 +14,7 @@ function Header() {
     <header>
       <nav>
         <div className='header-logo'>
-          <Link to={"/"}><img src="/images/dark-logo.png" alt="logo"/></Link>
+          <Link to={"/"}><img src="./images/dark-logo.png" alt="logo"/></Link>
         </div>
         <ul  className='link-bar'>
           <Link to="/MenuPage"> <li>Menu</li> </Link>

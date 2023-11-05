@@ -2,7 +2,7 @@
 function HeroSection() {
   return (
     <section className="hero-section"> 
-      <img src="/images/restaurant-hero.png" alt="img hero"/>
+      <img src="./images/restaurant-hero.png" alt="img hero"/>
       <article>
         <p className="small-text">Modern Colombian Food</p>
         <h1>We welcome you to savor the flavors of the world</h1>

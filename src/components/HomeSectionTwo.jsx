@@ -12,7 +12,7 @@ function HomeSectionTwo() {
         </Link>
       </article>
 
-      <img src="images/section-two-img.png" alt="choose your favorite dish" />
+      <img src="./images/section-two-img.png" alt="choose your favorite dish" />
 
     </section>
   )
