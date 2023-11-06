@@ -1,8 +1,7 @@
-# React + Vite
+# Restaurante App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Tuve muchos problemas al hacer el deploy porque React Router no funciona bien en GitHub pages.
 
-Currently, two official plugins are available:
+Si tiene problemas cuando haga Reload en (Book Page o Menu Page) y esta usando Google Chrome, entonces trate de usar otro navegador. Lo Trate en Safari y Firefox y todo funciona perfectamente.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+![website](/public/images/layout.png)
