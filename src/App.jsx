@@ -7,10 +7,6 @@ import MenuPage from './components/MenuPage'
 
 const router = createBrowserRouter([
   {
-    path: "",
-    element: <Home />
-  },
-  {
     path: "/",
     element: <Home />
   },
@@ -21,7 +17,11 @@ const router = createBrowserRouter([
   {
     path: "/MenuPage",
     element: <MenuPage />,
-  }
+  },
+  {
+    path: "*",
+    element: <Home />
+  },
 ], { basename: "/restaurant-App/" });
 
 function App() {
